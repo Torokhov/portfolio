@@ -4,6 +4,15 @@
   justify-content: center;
   align-items: center;
 }
+.logo {
+  display: block;
+  height: 174px;
+  width: 366px;
+  font-size: 0px;
+  background-image: url("../../img/decor/logo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
 .main-nav__list-links {
   display: flex;
   flex-direction: row;
@@ -32,6 +41,7 @@
 }
 body {
   width: 80%;
+  max-width: 1440px;
   margin: 0 auto;
   font-family: "Open Sans" sans-serif;
   font-size: 14px;
