@@ -49,6 +49,16 @@ body {
   font-weight: 400;
   color: #b7b7b7;
 }
+h2 {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 400;
+}
+h3 {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 400;
+}
 ul {
   list-style: none;
 }
