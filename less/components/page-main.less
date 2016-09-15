@@ -7,34 +7,59 @@
 
   float: left;
 
-    width: 30%;
-    min-width: 288px;
+  width: 283px;
+//  min-width: 283px;
+
+  &--horizontal {
+    height: 190px;
+  }
+
+  &--vertical {
+    height: 425px;
+  }
+
 
   &__link {
     display: block;
     width: 100%;
     height: 100%;
+
+    &:hover {
+//      background-color: black;
+    }
   }
 
   &__album-information {
     position: absolute;
 
-    &--horizontal {
-      top: 40px;
-      left: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+
+    &--horizontal::before {
+      top: 90px;
+//      left: 64px;
     }
 
-    &--vertical {
-      top: 155px;
-      left: 73px;
+    &--vertical::before {
+      top: 212px;
+//      left: 73px;
+    }
+
+    &:hover {
+      background-color: rgba(1, 1, 1, 0.5);
     }
 
     &::before {
       content: "";
 
       position: absolute;
-      top: 40px;
-      left: 49px;
+//      top: 40px;
+      left: 120px;
 
       width: 40px;
       height: 2px;
