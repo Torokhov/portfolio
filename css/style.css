@@ -1,3 +1,6 @@
+.main-header {
+  padding-bottom: 19px;
+}
 .main-head {
   display: flex;
   flex-direction: row;
