@@ -79,6 +79,11 @@
 .album-preview__album-information:hover {
   background-color: rgba(1, 1, 1, 0.5);
 }
+.album-preview__album-information:hover::before,
+.album-preview__album-information:hover .album-preview__album-name,
+.album-preview__album-information:hover .album-preview__album-category {
+  opacity: 1;
+}
 .album-preview__album-information::before {
   content: "";
   position: absolute;
@@ -86,9 +91,11 @@
   width: 40px;
   height: 2px;
   background-color: #fff;
+  opacity: 0;
 }
 .album-preview__album-name,
 .album-preview__album-category {
+  opacity: 0;
   text-align: center;
   color: #fff;
 }
