@@ -1,12 +1,25 @@
 .albums-list {
-  .clearfix;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: space-between;
+  flex-wrap: wrap;
+
+  &__item-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
 }
 
 .album-preview {
   position: relative;
 
-  float: left;
-
+//  float: left;
+  margin-bottom: 45px;
   width: 283px;
 //  min-width: 283px;
 
