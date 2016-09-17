@@ -40,14 +40,23 @@
   height: 2px;
   background-color: #000;
 }
-.albums-list::after {
-  content: "";
-  display: table;
-  clear: both;
+.albums-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: space-between;
+  flex-wrap: wrap;
+}
+.albums-list__item-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 .album-preview {
   position: relative;
-  float: left;
+  margin-bottom: 45px;
   width: 283px;
 }
 .album-preview--horizontal {
@@ -124,6 +133,8 @@ a {
   text-decoration: none;
 }
 ul {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 .clearfix::after {
